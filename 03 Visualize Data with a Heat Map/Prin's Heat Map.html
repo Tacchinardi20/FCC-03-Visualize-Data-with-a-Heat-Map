@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Global Land-Surface Temperature Heat Map</title>
+    <link rel="stylesheet" href="Prin's Heat Map.css">
+</head>
+<body>
+    <h1 id='title'>Monthly Global Land-Surface Temperature<h1>
+    <h2 id='description'>1753 - 2015 : &nbsp;Average Temperature &nbsp;8.66 ℃</h2>
+
+    <div id='tooltip'>
+
+    </div>
+
+    <svg id='canvas'>
+
+    </svg><br>
+
+    <svg id='legend'>
+        <g>
+            <rect x='10' y='0' width='40' height='40' fill='steelblue'></rect>
+            <text x='60' y='20' fill='white'>Variance of -1 or less</text>
+        </g>
+
+        <g>
+            <rect x='10' y='40' width='40' height='40' fill='lightsteelblue'></rect>
+            <text x='60' y='60' fill='white'>On or Below Average</text>
+        </g>
+
+        <g>
+            <rect x='10' y='80' width='40' height='40' fill='orange'></rect>
+            <text x='60' y='100' fill='white'>Above Average</text>
+        </g>
+
+        <g>
+            <rect x='10' y='120' width='40' height='40' fill='crimson'></rect>
+            <text x='60' y='140' fill='white'>Variance of +1 or more</text>
+        </g>
+    </svg><br>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script defer src="Prin's Heat Map.js"></script>
+</body>
+</html>
